@@ -25,13 +25,6 @@ router.post("/api/burgers", function(req,res) {
     )
 });
 
-// router.get("/api/burgers", function(req,res) {
-//     burger.selectAll(function(data) {
-//         var hbsObject = {
-//             burgers: data
-//         };
-//     res.json(req.body);
-// });
 
 router.put("/api/burgers/:id", function(req,res) {
     var condition = req.params.id;
