@@ -5,18 +5,18 @@ var burger = {
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {
             cb(res);
-        });
+        })
     },
-    insertOne: function(cols, vals, cb) {
-        orm.insertOne("burgers", cols, vals, function(res) {
+    insertOne: function(colsInput, burgerInput, cb) {
+        orm.insertOne("burgers", colsInput, burgerInput, function(res) {
             cb(res);
-        });
+        })
     },
-    updateOne: function(objColVals, condition, cb) {
-        orm.updateOne("burgers", objColVals, condition, function(res) {
+    updateOne: function(colInput, statusUpdate, idInput, cb) {
+        orm.updateOne("burgers", colInput, statusUpdate, idInput, function(res) {
             cb(res);
-        });
+        })
     }
-};
+}
 
 module.exports = burger;
