@@ -6,6 +6,10 @@ body {
       padding: 5px;
       margin: 5px;
       background: whitesmoke;
+  }
+
+    #devoured{
+      background: rgb(110, 110, 110);
     }
     
     .label {
